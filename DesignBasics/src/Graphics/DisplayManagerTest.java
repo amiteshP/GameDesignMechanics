@@ -34,9 +34,9 @@ public class DisplayManagerTest extends JFrame{
 	
 	public void run(DisplayMode displayMode) {
 		
-		setBackground(Color.BLUE);
-		setForeground(Color.WHITE);
-		setFont(new Font("Dialog", Font.PLAIN, 24));
+		setBackground(Color.BLACK);
+		setForeground(Color.BLUE);
+		setFont(new Font("Dialog", Font.BOLD, 24));
 		
 		DisplayManager dMag = new DisplayManager();
 		try {
