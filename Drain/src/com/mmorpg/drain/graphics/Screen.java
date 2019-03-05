@@ -54,12 +54,12 @@ public class Screen {
 				int xp = x + xOffset;
 				if (xp < 0 || xp >= width)
 					continue;
-				/**
-				 * declare single tile size(16X16 here) //int tileIndex = (x/16) + (y/16) * 64;
-				 * //same in bitwise int tileIndex = ( (xx>>4) & MAP_SIZE_MASK )+( (yy>>4) &
-				 * MAP_SIZE_MASK ) * MAP_SIZE;
-				 **/
-				pixels[(xp) + (yp) * width] = Sprite.grass.pixels[(x & 15) + (y & 15) * Sprite.grass.SIZE];// tiles[tileIndex];
+			
+				 // declare single tile size(16X16 here) int tileIndex = (x/16) + (y/16) * 64;
+				  //same in bitwise 
+				int tileIndex = ( (xp>>4) & MAP_SIZE_MASK )+( (yp>>4) & MAP_SIZE_MASK ) * MAP_SIZE;
+				
+				pixels[(xp) + (yp) * width] = tiles[tileIndex];//Sprite.grass.pixels[(x & 15) + (y & 15) * Sprite.grass.SIZE];// 
 			}
 		}
 	}

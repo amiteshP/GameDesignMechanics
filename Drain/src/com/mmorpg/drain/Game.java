@@ -133,7 +133,7 @@ public class Game extends Canvas implements Runnable {
 
 	public void update() {
 		// randomize tile color
-		// screen.randomizeTileColor();
+		screen.randomizeTileColor();
 
 		// check the updates on keyboard set in each update loop
 		key.update();
